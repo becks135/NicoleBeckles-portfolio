@@ -1,0 +1,31 @@
+.contact {
+    // background-color: $secondary-bg-color-dm;
+    padding:110px 0;
+
+    h2{
+        margin-bottom:40px;
+    }
+}
+
+.get-in-touch{
+    display:flex;
+    justify-content: space-between;
+    
+
+    div{
+        width:calc(50% - 15px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &>div{
+            width:65%;
+        }
+    }
+
+    form{
+        width:calc(50% - 15px);
+        display:flex;
+        flex-direction: column;
+    }
+}

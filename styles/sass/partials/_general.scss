@@ -11,3 +11,16 @@ img {
     display: block;
 }
 
+button{
+    border:none;
+    padding: 15px 10px;
+    font-family: $header-font;
+    background-color: $secondary-accent-color;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+}

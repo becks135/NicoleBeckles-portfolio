@@ -1,0 +1,23 @@
+form {
+    input,
+    textarea {
+        border:1px solid $secondary-bg-color-dm;
+        background-color: transparent;
+        color:$primary-color-dm;
+        opacity:0.6;
+        font-family:$header-font;
+        letter-spacing: 0.014rem;
+        line-height: 2.1rem;
+        padding: 10px;
+        margin-bottom:20px;
+    }
+
+    textarea {
+        resize:none;
+    }
+
+    ::placeholder {
+        color:$primary-color-dm;
+        opacity:0.6;
+    }
+}
