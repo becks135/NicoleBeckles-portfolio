@@ -403,3 +403,29 @@ nav ul {
   margin: 0 auto;
   margin-top: 20px;
 }
+
+.skills {
+  background-image: url(../assets/white-texture.png);
+  padding: 150px 0;
+  background-color: black;
+}
+.skills .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.skills .wrapper h2 {
+  text-align: left;
+  grid-column: 1/5;
+}
+.skills i {
+  font-size: 4.5rem;
+}
+.skills i:hover, .skills i:focus {
+  color: #F8D210;
+}

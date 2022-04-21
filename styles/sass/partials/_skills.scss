@@ -1,0 +1,29 @@
+.skills{
+    background-image: url(../assets/white-texture.png);
+    padding:150px 0;
+    background-color: black;
+
+    .wrapper{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+        align-items: center;
+        text-align: center;
+
+        h2{
+            text-align: left;
+            grid-column: 1/5;
+        }
+    }
+
+    i{
+        font-size: 4.5rem;
+
+        &:hover,
+        &:focus{
+            color: $accent-color-secondary;
+        }
+        
+    }
+}
