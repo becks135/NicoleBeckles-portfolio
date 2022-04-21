@@ -5,30 +5,59 @@ header {
         height: 85%;
         display:flex;
         align-items: center;
+        margin-top:50px;
         position:relative;
         justify-content: space-between;
-
-        div {
-            width:calc(50% - 50px);
-        }
     }
-
-    
-
 }
 
 nav {
     display: flex;
-    position:fixed;
-    width:100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-between;
-    padding:10px 25px;
-    background-color:$accent-color-opacity;
-    
+    padding: 10px 25px;
+    background-color: $accent-color-opacity;
+    z-index: 100;
 
     ul {
         display: flex;
-        gap:20px;
+        gap: 20px;
+    }
+}
+
+.header-text {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.header-image {
+    width: 50%;
+    padding-left: 175px;
+    height: 100%;
+    max-height: 500px;
+    position: relative;
+    transform: rotate(5deg);
+
+    img {
+        border-radius: 10px;
+
+        
+    }
+
+    &:before {
+        content: '';
+        width: calc(100% - 175px);
+        height: 100%;
+        max-height: 500px;
+        background-color: $accent-color;
+        position:absolute;
+        border-radius:10px;
+        right:100px;
+        z-index:-10;
+        transform: rotate(-10deg) translateY(35px);
+        // top:-100px;
     }
 }
 
