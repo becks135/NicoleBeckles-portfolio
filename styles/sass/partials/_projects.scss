@@ -8,17 +8,49 @@
     height:600px;
     display:flex;
     justify-content: space-between;
+    align-items: center;
     
     .project-image-container{
-        width:calc(75% - 10px);
-    }
-
-    .project-description-container{
-        width:25%;
+        width:calc(75% - 25px);
+        height:100%;
     }
 
     img{
-        height:100%;
-        width:auto;
+        // height:100%;
+        object-fit:contain;
+        width:100%;
     }
+
+    .project-description-container {
+        width: 25%;
+    }
+
+    .skills-container{
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+        flex-wrap: wrap;
+        // color: $secondary-accent-color;
+        margin:20px 0;
+    }
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+
+    &>div {
+        text-align: center;
+    }
+
+    a {
+        padding: 12px 22px;
+
+        i {
+            padding-right:5px;
+            font-size: 20px;;
+        }
+    }
+
+
 }

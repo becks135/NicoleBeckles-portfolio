@@ -316,16 +316,20 @@ img {
   display: block;
 }
 
-button {
+button,
+.button {
   border: none;
   padding: 15px 10px;
   font-family: "Poppins", sans-serif;
+  color: #303134;
   background-color: #F8D210;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-button:hover, button:focus {
+button:hover, button:focus,
+.button:hover,
+.button:focus {
   opacity: 0.6;
 }
 
@@ -502,16 +506,50 @@ nav div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .project-container .project-image-container {
-  width: calc(75% - 10px);
+  width: calc(75% - 25px);
+  height: 100%;
+}
+.project-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }
 .project-container .project-description-container {
   width: 25%;
 }
-.project-container img {
-  height: 100%;
-  width: auto;
+.project-container .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.project-links > div {
+  text-align: center;
+}
+.project-links a {
+  padding: 12px 22px;
+}
+.project-links a i {
+  padding-right: 5px;
+  font-size: 20px;
 }
 
 .contact {

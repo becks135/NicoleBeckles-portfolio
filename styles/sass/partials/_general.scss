@@ -11,10 +11,12 @@ img {
     display: block;
 }
 
-button{
+button,
+.button {
     border:none;
     padding: 15px 10px;
     font-family: $header-font;
+    color:$primary-bg-color-dm;
     background-color: $secondary-accent-color;
     cursor: pointer;
     transition: 0.3s;
