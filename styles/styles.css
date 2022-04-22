@@ -488,6 +488,32 @@ nav div {
   color: #F8D210;
 }
 
+.projects {
+  background-color: #494B50;
+  padding: 150px 0;
+}
+
+.project-container {
+  margin: 60px 0;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.project-container .project-image-container {
+  width: calc(75% - 10px);
+}
+.project-container .project-description-container {
+  width: 25%;
+}
+.project-container img {
+  height: 100%;
+  width: auto;
+}
+
 .contact {
   padding: 110px 0;
 }
