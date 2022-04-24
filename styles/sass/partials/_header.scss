@@ -15,27 +15,7 @@ header {
     }
 }
 
-nav {
-    height:60px;
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 25px;
-    background-color: $accent-color-opacity;
-    z-index: 100;
 
-    ul {
-        display: flex;
-        gap: 20px;
-    }
-
-    div{
-        height:100%;
-    }
-}
 
 .header-text {
     width: 50%;
