@@ -639,6 +639,13 @@ nav a {
     -webkit-transform: translateY(-12px) rotate(-45deg);
             transform: translateY(-12px) rotate(-45deg);
   }
+
+  .menu-button.active .line {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
 }
 .skills {
   background-image: url(../assets/white-texture.png);

@@ -90,11 +90,18 @@ nav {
     }
 
     .menu-button.active .line:nth-child(1) {
+    
         transform: translateY(12px) rotate(45deg);   
     }
 
     .menu-button.active .line:nth-child(3) {
+        
         transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .menu-button.active .line{
+        transition: 0.4s;
+        transition-delay: 0.2s;
     }
 
     // .navigation-menu{
