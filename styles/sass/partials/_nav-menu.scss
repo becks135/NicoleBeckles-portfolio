@@ -1,13 +1,13 @@
 nav {
-    height: 60px;
+    height: 70px;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 25px;
-    background-color: $accent-color-opacity;
+    padding: 10px 30px;
+    background-color: $primary-bg-color-opacity;
     z-index: 100;
 
     ul {
@@ -17,6 +17,14 @@ nav {
 
     a {
         height: 100%;
+        img{
+            padding:5px 0;
+        }
+    }
+
+    .navigation-menu a{
+        padding-right:25px;
+        // text-transform: uppercase;
     }
 }
 

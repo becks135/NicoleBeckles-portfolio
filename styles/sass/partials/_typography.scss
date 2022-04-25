@@ -69,6 +69,7 @@ a {
 
     &:hover,
     &:focus {
-        opacity:0.5;
+        transform: scale(1.02);
+        // opacity:0.5;
     }
 }
