@@ -910,10 +910,6 @@ footer {
   }
 }
 @media (max-width: 450px) {
-  nav {
-    background-color: rgba(0, 179, 158, 0.2);
-  }
-
   h1 {
     font-size: 4rem;
   }
