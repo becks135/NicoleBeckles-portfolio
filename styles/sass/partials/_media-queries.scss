@@ -193,6 +193,10 @@
 }
 
 @media(max-width:450px){
+    nav{
+        background-color:$accent-color-opacity;
+    }
+    
     h1{
         font-size:4rem;
     }
