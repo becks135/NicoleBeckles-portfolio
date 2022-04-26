@@ -12,18 +12,19 @@ nav {
 
     ul {
         display: flex;
-        gap: 20px;
+        gap: 40px;
     }
 
     a {
         height: 100%;
         img{
+            width:auto;
             padding:5px 0;
         }
     }
 
     .navigation-menu a{
-        padding-right:25px;
+        // padding-right:25px;
         // text-transform: uppercase;
     }
 }
