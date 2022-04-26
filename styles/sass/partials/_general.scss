@@ -30,5 +30,6 @@ button,
     &:hover,
     &:focus {
         opacity: 0.6;
+        color:$primary-bg-color-dm;
     }
 }

@@ -70,6 +70,7 @@ a {
     &:hover,
     &:focus {
         transform: scale(1.02);
+        color:$primary-accent-color;
         // opacity:0.5;
     }
 }
