@@ -587,19 +587,20 @@ nav a img {
   padding: 150px 0;
   background-color: black;
 }
-.skills .wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  grid-auto-rows: minmax(100px, auto);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.skills .skills-container {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.skills .wrapper h2 {
-  text-align: left;
-  grid-column: 1/5;
+.skills .skills-container .skill {
+  padding: 20px;
+  width: calc(25% - 10px);
 }
 .skills i {
   font-size: 4.5rem;
@@ -910,5 +911,10 @@ footer {
   }
   .get-in-touch form {
     margin-top: 25px;
+  }
+
+  .skills .skills-container .skill {
+    padding: 20px;
+    width: calc(33.33% - 10px);
   }
 }

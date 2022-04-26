@@ -194,4 +194,14 @@
         }
     }
 
+    .skills{
+        .skills-container {
+            .skill {
+                padding: 20px;
+                width: calc(33.33% - 10px);
+            }
+        
+        }
+    }
+
 }

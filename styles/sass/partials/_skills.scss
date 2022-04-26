@@ -3,19 +3,33 @@
     padding:150px 0;
     background-color: black;
 
-    .wrapper{
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        grid-auto-rows: minmax(100px, auto);
-        align-items: center;
+    .skills-container{
         text-align: center;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        // gap:10px;
 
-        h2{
-            text-align: left;
-            grid-column: 1/5;
+        .skill{
+            padding:20px;
+            width:calc(25% - 10px);
         }
+        
     }
+    // .wrapper{
+        // display:grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // gap: 30px;
+        // grid-auto-rows: minmax(100px, auto);
+        // align-items: center;
+        // text-align: center;
+
+        // h2{
+        //     text-align: left;
+        //     grid-column: 1/5;
+        // }
+        ;
+    //}
 
     i{
         font-size: 4.5rem;
