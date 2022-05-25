@@ -294,6 +294,30 @@ html {
             transform: none;
   }
 }
+@-webkit-keyframes cursor-highlight {
+  0%, 10% {
+    width: 0;
+    background-color: black;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes cursor-highlight {
+  0%, 10% {
+    width: 0;
+    background-color: black;
+  }
+  70%, 90% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -461,6 +485,25 @@ header .header-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header h1 {
+  position: relative;
+  color: #303134;
+  -webkit-text-stroke: 1px #fff;
+}
+header h1:before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #00D4BD;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-intro);
+  -webkit-text-stroke: 1px #00D4BD;
+  -webkit-animation: cursor-highlight 2.5s linear forwards;
+          animation: cursor-highlight 2.5s linear forwards;
 }
 
 .header-text {

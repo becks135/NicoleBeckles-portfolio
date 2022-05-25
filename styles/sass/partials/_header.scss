@@ -14,9 +14,30 @@ header {
         position:relative;
         justify-content: space-between;
     }
+
+    h1{
+        position:relative;
+        color: $primary-bg-color-dm;
+        -webkit-text-stroke: 1px $primary-color-dm;
+        // font-size:5rem;
+
+        &:before {
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            color: $primary-accent-color;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            content: attr(data-intro);
+            // border-right: 2px solid $primary-accent-color;
+            
+            -webkit-text-stroke: 1px $primary-accent-color;
+            animation: cursor-highlight 2.5s linear forwards;
+        }
+    }
 }
-
-
 
 .header-text {
     width: 50%;
