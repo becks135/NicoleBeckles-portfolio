@@ -26,3 +26,24 @@
         transform: none;
     }
 }
+
+@keyframes cursor-highlight {
+    0%,
+	10%
+    {
+        width: 0;
+        background-color: black;
+    }
+
+	70%,
+	90%
+    {
+        width: 100%
+    }
+
+    100%
+    {
+        width:100%;
+        // border-right: none;
+    }
+}
